@@ -366,6 +366,13 @@
 
 .hero-highlight {
   color: var(--accent-text);
+  white-space: nowrap;
+}
+
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: clamp(1.85rem, 8.5vw, 2.25rem);
+  }
 }
 
 .hero-lead {
