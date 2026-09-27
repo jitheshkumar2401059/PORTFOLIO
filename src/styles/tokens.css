@@ -1,0 +1,184 @@
+/* ==========================================================================
+   Design Tokens System - Professional Developer & AI/Data Science Aesthetic
+   ========================================================================== */
+
+:root {
+  /* Typography Families */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", monospace;
+
+  /* Typography Scale */
+  --text-xs: 0.75rem;       /* 12px */
+  --text-sm: 0.84375rem;    /* 13.5px */
+  --text-base: 0.9375rem;   /* 15px */
+  --text-md: 1.03125rem;    /* 16.5px */
+  --text-lg: 1.125rem;      /* 18px */
+  --text-xl: 1.25rem;       /* 20px */
+  --text-2xl: 1.5rem;       /* 24px */
+  --text-3xl: 1.875rem;     /* 30px */
+  --text-4xl: 2.25rem;      /* 36px */
+  --text-5xl: clamp(2.25rem, 5vw, 3.5rem); /* Hero Title */
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Line Heights */
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  /* Letter Spacings */
+  --tracking-tighter: -0.035em;
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.04em;
+  --tracking-wider: 0.08em;
+
+  /* Spacing Scale */
+  --space-0-5: 0.125rem; /* 2px */
+  --space-1: 0.25rem;    /* 4px */
+  --space-1-5: 0.375rem; /* 6px */
+  --space-2: 0.5rem;     /* 8px */
+  --space-2-5: 0.625rem; /* 10px */
+  --space-3: 0.75rem;    /* 12px */
+  --space-4: 1rem;       /* 16px */
+  --space-5: 1.25rem;    /* 20px */
+  --space-6: 1.5rem;     /* 24px */
+  --space-8: 2rem;       /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-24: 6rem;      /* 96px */
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base: 220ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 320ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout Standards */
+  --container-max-width: 1060px;
+  --header-height: 4rem;
+}
+
+/* ==========================================================================
+   Dark Theme (Default) - Sophisticated Obsidian, Slate, & Cyan/Sapphire
+   ========================================================================== */
+:root,
+:root[data-theme="dark"] {
+  /* Background Layers */
+  --bg-primary: #090d16;
+  --bg-surface: #0f1523;
+  --bg-elevated: #141c2e;
+  --bg-subtle: #1a243a;
+  --bg-glass: rgba(15, 21, 35, 0.85);
+
+  /* Card Surfaces */
+  --card-bg: #0f1523;
+  --card-bg-hover: #131b2c;
+  --card-border: #1e293b;
+  --card-border-hover: #334155;
+
+  /* Text Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-tertiary: #94a3b8;
+  --text-muted: #64748b;
+  --text-dim: #475569;
+
+  /* Primary Accent (Precision Blue-Cyan) */
+  --accent-primary: #0284c7;
+  --accent-hover: #0369a1;
+  --accent-subtle: rgba(2, 132, 199, 0.12);
+  --accent-border: rgba(2, 132, 199, 0.28);
+  --accent-text: #38bdf8;
+
+  /* Secondary Accent (Emerald / Data Signal) */
+  --accent-secondary: #10b981;
+  --accent-secondary-subtle: rgba(16, 185, 129, 0.12);
+  --accent-secondary-text: #34d399;
+
+  /* Subtle Borders */
+  --border-subtle: #1a2333;
+  --border-medium: #222f45;
+  --border-hover: #33435c;
+  --border-accent: rgba(2, 132, 199, 0.4);
+
+  /* Focus Indicator */
+  --focus-ring: #38bdf8;
+
+  /* Shadows - Balanced & Grounded */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 10px -2px rgba(0, 0, 0, 0.45), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.55), 0 4px 8px -2px rgba(0, 0, 0, 0.35);
+  --shadow-card: 0 2px 6px -1px rgba(0, 0, 0, 0.4), 0 1px 3px -1px rgba(0, 0, 0, 0.25);
+  --shadow-card-hover: 0 8px 20px -3px rgba(0, 0, 0, 0.55), 0 3px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================================================
+   Light Theme - Crisp Slate, Clean Paper, & Deep Navy Text
+   ========================================================================== */
+:root[data-theme="light"] {
+  /* Background Layers */
+  --bg-primary: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-elevated: #f1f5f9;
+  --bg-subtle: #e2e8f0;
+  --bg-glass: rgba(255, 255, 255, 0.88);
+
+  /* Card Surfaces */
+  --card-bg: #ffffff;
+  --card-bg-hover: #fafafa;
+  --card-border: #e2e8f0;
+  --card-border-hover: #cbd5e1;
+
+  /* Text Colors */
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-tertiary: #64748b;
+  --text-muted: #94a3b8;
+  --text-dim: #cbd5e1;
+
+  /* Primary Accent (Sapphire / Royal Blue) */
+  --accent-primary: #0284c7;
+  --accent-hover: #0369a1;
+  --accent-subtle: rgba(2, 132, 199, 0.08);
+  --accent-border: rgba(2, 132, 199, 0.2);
+  --accent-text: #0284c7;
+
+  /* Secondary Accent */
+  --accent-secondary: #059669;
+  --accent-secondary-subtle: rgba(5, 150, 105, 0.08);
+  --accent-secondary-text: #047857;
+
+  /* Subtle Borders */
+  --border-subtle: #e2e8f0;
+  --border-medium: #cbd5e1;
+  --border-hover: #94a3b8;
+  --border-accent: rgba(2, 132, 199, 0.3);
+
+  /* Focus Indicator */
+  --focus-ring: #0284c7;
+
+  /* Shadows - Soft & Tactile */
+  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 20px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
+  --shadow-card: 0 1px 3px 0 rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
+  --shadow-card-hover: 0 6px 16px -2px rgba(15, 23, 42, 0.09), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+}
